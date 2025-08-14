@@ -53,23 +53,14 @@ def run_query(index):
         if query.lower() == "exit":
             break
         response = query_engine.query(query)  # No need for response_mode
-        print("Full response object:", response)
+        print(response)
         print("\nCitations:")
         if hasattr(response, "source_nodes") and response.source_nodes:
             for source in response.source_nodes:
-                print(f"Source node metadata: {source.node.metadata}")  # Debug print
                 print(f"- {source.node.metadata.get('source', 'Unknown')}")
         else:
             print("No citations available.")
 
-
-# Just running Ollama with LLM to query text
-# def runOllama(prompt):
-#     llm = Ollama(model="llama3.2", request_timeout=30.0)
-#     print(llm.complete(prompt))
-
-
 if __name__ == "__main__":
-    #runOllama("What is love?")
     index = persist_index()
     run_query(index = index)

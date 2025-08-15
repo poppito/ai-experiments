@@ -52,4 +52,4 @@ The top level directory/folder can be whatever you want to call it. As long as y
 
 
 ## Preview
-!()[https://github.com/poppito/ai-experiments/blob/main/images/rag.mp4]
+![](https://github.com/poppito/ai-experiments/blob/main/images/rag.mp4)

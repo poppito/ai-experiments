@@ -34,3 +34,22 @@ ollama run llama3:2
 ```
 
 This will pull the model if it doesn't already exist and then run it too.
+
+## Setup
+
+Your setup should look like this:
+
+```markdown
+RAG/
+├── script.py
+├── index_storage/
+└── data/
+    ├── document1.txt
+    └── document2.pdf
+```
+
+The top level directory/folder can be whatever you want to call it. As long as you've installed the dependencies above, you can plonk the script below into the root of the folder. The `data` directory is where the script reads any text formatted data from to create the embeddings. Once the script is run, it will create `index_storage` where the embeddings are stored.
+
+
+## Preview
+!{}[./images/rag.mp4]

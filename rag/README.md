@@ -52,4 +52,4 @@ The top level directory/folder can be whatever you want to call it. As long as y
 
 
 ## Preview
-!{}[./images/rag.mp4]
+!()[./images/rag.mp4]
